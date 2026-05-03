@@ -1,13 +1,16 @@
-📱 Instagram Stories Feature (Frontend Assignment)
+📱Instagram Stories Feature (Frontend Assignment)
 
 A mobile-first implementation of the Instagram Stories feature built using Next.js and React.
 This project focuses on smooth UI interactions, clean state management, and a seamless user experience without relying on external libraries for core functionality.
 
 🚀 Live Demo
 
-👉 Add your deployed link here (Vercel)
+👉 https://cactro-insta-stories-sepia.vercel.app/
+
+------------
 
 🎯 Features
+
 📲 Mobile-first design
 📜 Horizontally scrollable story list
 👤 Multiple users with multiple stories
@@ -24,6 +27,8 @@ This project focuses on smooth UI interactions, clean state management, and a se
 🧠 Key Implementation Details
 🔹 Grouped Stories (Instagram-like)
 
+----------------
+
 Each user contains multiple stories:
 
 {
@@ -33,22 +38,31 @@ Each user contains multiple stories:
     { "image": "..." }
   ]
 }
+
 🔹 Image Preloading + UX Sync
 Story only starts when image is fully loaded
 Progress bar is synced with loading
 Spinner shown during loading
+
+
 🔹 Smooth Transitions
 Fade-in effect between stories
 No black flicker or UI jump
+
+
 🔹 State Management
 Controlled story index per user
 Safe rendering to avoid undefined access
 Clean separation of user and story logic
+
+
 🛠️ Tech Stack
 Next.js (App Router)
 React (Hooks)
 TypeScript
 Tailwind CSS
+
+
 📂 Project Structure
 /app
   page.tsx
@@ -57,6 +71,8 @@ Tailwind CSS
   StoryViewer.tsx
 /public/data
   stories.json
+
+
 ⚙️ Setup Instructions
 # Clone repo
 git clone <your-repo-link>
@@ -70,6 +86,8 @@ npm run dev
 Open:
 
 http://localhost:3000
+
+
 📌 Assumptions
 Stories do not expire (as per assignment requirement)
 No backend or persistence layer
@@ -79,10 +97,7 @@ Swipe gesture support
 Story seen/unseen indicators
 Pause on long press
 Backend integration
-Video stories support
-🎥 Demo Video
-
-👉 Add your Loom/video link here
+------------
 
 🙌 Conclusion
 
