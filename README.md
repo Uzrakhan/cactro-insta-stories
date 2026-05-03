@@ -1,36 +1,97 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+📱 Instagram Stories Feature (Frontend Assignment)
 
-## Getting Started
+A mobile-first implementation of the Instagram Stories feature built using Next.js and React.
+This project focuses on smooth UI interactions, clean state management, and a seamless user experience without relying on external libraries for core functionality.
 
-First, run the development server:
+🚀 Live Demo
 
-```bash
+👉 Add your deployed link here (Vercel)
+
+🎯 Features
+📲 Mobile-first design
+📜 Horizontally scrollable story list
+👤 Multiple users with multiple stories
+▶️ Tap to open stories
+👉 Navigate forward (right tap)
+👈 Navigate backward (left tap)
+⏱️ Auto-advance stories after 5 seconds
+📊 Animated progress bar
+⏳ Image preloading with loading spinner
+✨ Smooth fade transitions (no flicker)
+🧠 Safe state handling (no runtime crashes)
+🎨 Clean UI with gradients and overlays
+📁 Data fetched from external JSON file
+🧠 Key Implementation Details
+🔹 Grouped Stories (Instagram-like)
+
+Each user contains multiple stories:
+
+{
+  "username": "nature",
+  "stories": [
+    { "image": "..." },
+    { "image": "..." }
+  ]
+}
+🔹 Image Preloading + UX Sync
+Story only starts when image is fully loaded
+Progress bar is synced with loading
+Spinner shown during loading
+🔹 Smooth Transitions
+Fade-in effect between stories
+No black flicker or UI jump
+🔹 State Management
+Controlled story index per user
+Safe rendering to avoid undefined access
+Clean separation of user and story logic
+🛠️ Tech Stack
+Next.js (App Router)
+React (Hooks)
+TypeScript
+Tailwind CSS
+📂 Project Structure
+/app
+  page.tsx
+/components
+  StoryList.tsx
+  StoryViewer.tsx
+/public/data
+  stories.json
+⚙️ Setup Instructions
+# Clone repo
+git clone <your-repo-link>
+
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+http://localhost:3000
+📌 Assumptions
+Stories do not expire (as per assignment requirement)
+No backend or persistence layer
+Images are fetched from public URLs
+💡 Improvements (Future Scope)
+Swipe gesture support
+Story seen/unseen indicators
+Pause on long press
+Backend integration
+Video stories support
+🎥 Demo Video
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+👉 Add your Loom/video link here
 
-## Learn More
+🙌 Conclusion
 
-To learn more about Next.js, take a look at the following resources:
+This project focuses on replicating the core interaction and experience of Instagram Stories with:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+smooth UX
+clean architecture
+no external libraries for core logic
+📬 Author
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Your Name
+Frontend Developer
