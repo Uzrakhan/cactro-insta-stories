@@ -106,7 +106,8 @@ This project focuses on replicating the core interaction and experience of Insta
 smooth UX
 clean architecture
 no external libraries for core logic
-📬 Author
 
-Your Name
+
+📬 Author
+Uzra Khan
 Frontend Developer
